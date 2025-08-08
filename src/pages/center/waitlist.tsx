@@ -137,7 +137,7 @@ export default function Waitlist() {
             </button>
           </form>
           <div>
-            <p>
+            <p className="text-black">
               Already <span className="text-blue-500">2,547</span> students
               waiting
             </p>
