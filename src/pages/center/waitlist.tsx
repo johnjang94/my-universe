@@ -45,7 +45,7 @@ export default function Waitlist() {
             >
               ×
             </button>
-            <h2 className="text-xl font-semibold">🎉 You've signed up!</h2>
+            <h2 className="text-xl font-semibold">🎉 You&apos;ve signed up!</h2>
             <p className="text-gray-600">Thanks, {submittedName}!</p>
             <button
               onClick={() => setShowModal(false)}
