@@ -1,4 +1,5 @@
 import TopLayer from "@/components/navigation/top-layer";
+import Ending from "@/components/footer/ending";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
@@ -9,6 +10,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <TopLayer />
       </div>
       <Component {...pageProps} />
+      <div>
+        <Ending />
+      </div>
     </div>
   );
 }

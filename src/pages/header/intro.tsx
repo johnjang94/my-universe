@@ -26,6 +26,8 @@ export default function Intro() {
           <button className="px-5 py-2 bg-white text-blue-500 gap-5 rounded-lg flex items-center md:hidden w-5/6 mx-auto">
             <span className="mx-auto">Join Waitlist</span>
           </button>
+        </Link>
+        <Link href="">
           <button className="px-5 py-2 bg-white text-blue-500 gap-5 rounded-lg md:flex hidden items-center mx-auto">
             <span className="text-center">Join Waitlist</span> <FaArrowRight />
           </button>
@@ -34,6 +36,8 @@ export default function Intro() {
           <button className="px-5 py-2 bg-white text-blue-500 gap-5 rounded-lg flex items-center md:hidden w-5/6 mx-auto">
             <span className="mx-auto">Learn More</span>
           </button>
+        </Link>
+        <Link href="">
           <button className="px-5 py-2 bg-white text-blue-500 gap-5 rounded-lg md:flex hidden items-center mx-auto">
             Learn More
           </button>

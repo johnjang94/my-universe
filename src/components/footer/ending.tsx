@@ -4,7 +4,7 @@ import { CiMail } from "react-icons/ci";
 
 export default function Ending() {
   return (
-    <div className="md:flex md:flex-1 p-5 space-y-10">
+    <div className="md:flex md:flex-1 p-5 space-y-10 bg-white">
       <div className="md:w-2/6 space-y-3">
         <div className="flex space-x-2 items-center">
           <p className="bg-blue-600 text-white rounded-lg p-2">AI</p>
@@ -18,7 +18,6 @@ export default function Ending() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto md:px-6 md:grid md:grid-cols-3 gap-8 text-sm text-gray-700 space-y-10 md:space-y-0">
-        {/* Product */}
         <div>
           <h3 className="font-bold mb-4 text-gray-900">Product</h3>
           <ul className="space-y-2">
@@ -45,7 +44,6 @@ export default function Ending() {
           </ul>
         </div>
 
-        {/* Company */}
         <div>
           <h3 className="font-bold mb-4 text-gray-900">Company</h3>
           <ul className="space-y-2">
@@ -72,7 +70,6 @@ export default function Ending() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h3 className="font-bold mb-4 text-gray-900">Contact</h3>
           <div className="flex space-x-4 text-xl">
