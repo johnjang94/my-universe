@@ -59,7 +59,7 @@ export default function Waitlist() {
 
       <div className="mx-auto md:w-3/6 text-center space-y-12 py-24">
         <div className="space-y-3">
-          <h1 className="font-bold md:text-4xl text-2xl">
+          <h1 className="font-bold md:text-4xl text-2xl text-black">
             Be the First to Experience UniBot
           </h1>
           <p className="text-gray-400 text-xl w-5/6 md:w-full mx-auto">
@@ -73,7 +73,7 @@ export default function Waitlist() {
             className="space-y-4 p-5 bg-white rounded-lg md:w-4/6 w-5/6 mx-auto"
           >
             <div>
-              <h1 className="text-2xl">Join the Waitlist</h1>
+              <h1 className="text-2xl text-black">Join the Waitlist</h1>
               <p className="text-gray-400">
                 Get notified when UniBot launches at your university
               </p>
@@ -140,7 +140,7 @@ export default function Waitlist() {
             </button>
           </form>
           <div>
-            <p>
+            <p className="text-black">
               Already <span className="text-blue-500">2,547</span> students
               waiting
             </p>
