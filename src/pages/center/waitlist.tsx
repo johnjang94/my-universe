@@ -13,12 +13,6 @@ type FormData = {
 
 export default function Waitlist() {
   const [isClient, setIsClient] = useState(false);
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) return null;
-
   const {
     register,
     handleSubmit,
@@ -26,10 +20,16 @@ export default function Waitlist() {
     reset,
   } = useForm<FormData>();
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const onSubmit = (data: FormData) => {
     console.log("Form submitted:", data);
     reset();
   };
+
+  if (!isClient) return null;
 
   return (
     <div className="mx-auto md:w-3/6 text-center space-y-12 py-24">
