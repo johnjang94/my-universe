@@ -1,11 +1,7 @@
-import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
-import { IoChatbubbleOutline } from "react-icons/io5";
-import { GoPeople } from "react-icons/go";
-import { SlEnergy } from "react-icons/sl";
 import Image from "next/image";
 import lexi_2 from "@/assets/lexi_2.png";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Intro() {
   return (
@@ -16,7 +12,15 @@ export default function Intro() {
       <div className="space-y-3">
         <h1 className="md:text-6xl text-4xl">Lexi,</h1>
         <h1 className="md:text-5xl text-4xl bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-          Your personal academic companion
+          <Typewriter
+            words={["Your personal academic companion"]}
+            loop={Infinity}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
         </h1>
       </div>
       <div className="w-5/6 text-start mx-auto">
