@@ -1,22 +1,19 @@
 import React from "react";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import Image from "next/image";
+import logo from "@/assets/lexi.png";
 
 export default function Ending() {
   return (
-    <div className="md:flex md:flex-1 p-5 space-y-10 bg-white">
-      <div className="md:w-2/6 space-y-3">
-        <div className="flex space-x-2 items-center">
-          <p className="bg-blue-600 text-white rounded-lg p-2">AI</p>
-          <p className="font-bold text-2xl">UniBot</p>
-        </div>
-        <div>
-          <p className="text-gray-500">
-            Empowering students with intelligent assistance for a better
-            university experience.
-          </p>
-        </div>
-      </div>
+    <div className="md:flex md:flex-1 p-5 space-y-10 bg-white text-center md:text-start">
+      <Image
+        src={logo}
+        alt="My logo"
+        width={100}
+        height={50}
+        className="mx-auto md:mx-0"
+      />
       <div className="max-w-6xl mx-auto md:px-6 md:grid md:grid-cols-3 gap-8 text-sm text-gray-700 space-y-10 md:space-y-0">
         <div>
           <h3 className="font-bold mb-4 text-gray-900">Product</h3>
@@ -59,11 +56,6 @@ export default function Ending() {
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
                 Blog
               </a>
             </li>
@@ -72,11 +64,11 @@ export default function Ending() {
 
         <div>
           <h3 className="font-bold mb-4 text-gray-900">Contact</h3>
-          <div className="flex space-x-4 text-xl">
+          <div className="flex space-x-4 text-xl justify-center md:justify-start">
             <a href="#" aria-label="Twitter" className="hover:text-blue-500">
               <FaTwitter />
             </a>
-            <a href="#" aria-label="GitHub" className="hover:text-gray-900">
+            <a href="#" aria-label="GitHub" className="hover:text-blue-500">
               <FaGithub />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:text-blue-700">
